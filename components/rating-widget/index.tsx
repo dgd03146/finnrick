@@ -40,7 +40,7 @@ function Header({ children }: HeaderProps) {
             FINNRICK RATING™
           </span>
           <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"></div>
-        </div>
+    </div>
       )}
     </header>
   )
@@ -146,19 +146,19 @@ function Footer({ logoUrl, showLogo = true }: FooterProps) {
         <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
           Verified by
         </span>
-        {logoUrl ? (
-          <img
-            src={logoUrl || "/placeholder.svg"}
+      {logoUrl ? (
+        <img
+          src={logoUrl || "/placeholder.svg"}
             alt="Finnrick company logo"
             className="h-4 filter hover:brightness-110 transition-all duration-200"
-          />
-        ) : (
+        />
+      ) : (
           <Award 
             className="w-4 h-4 text-gray-400 hover:text-gray-600 transition-colors duration-200" 
             aria-label="Award icon representing Finnrick certification"
           />
-        )}
-      </div>
+      )}
+    </div>
     </footer>
   )
 }

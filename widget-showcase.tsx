@@ -3,6 +3,18 @@ import { DesktopRatingWidget, MobileRatingWidget, ResponsiveRatingWidget } from 
 import { CustomRatingWidget, MinimalRatingWidget } from "./components/rating-widget/custom-examples"
 import FigmaInspiredWidget from "./components/rating-widget/figma-inspired-widget"
 
+import { 
+  FinnrickCard, 
+  FinnrickCardHeader, 
+  FinnrickCardContent, 
+  FinnrickCardBadge, 
+  FinnrickCardTitle, 
+  FinnrickCardSubtitle, 
+  FinnrickCardDetails, 
+  FinnrickCardSampleInfo, 
+  FinnrickCardTestDate 
+} from "./components/rating-widget/finnrick-card"
+
 import OptimizedEmbedWidget from "./components/rating-widget/optimized-embed-widget"
 
 export default function WidgetShowcase() {
@@ -13,6 +25,98 @@ export default function WidgetShowcase() {
           <h1 className="text-3xl font-bold text-gray-900">Finnrick Rating™ Widget System</h1>
           <p className="text-gray-600">Optimized widget variants for third-party site embedding</p>
         </div>
+<h1 className="text-[32px] font-bold text-gray-900">
+Finnrick - Rating Card System - On-Site
+</h1>
+<p className="text-[#2663EC] font-semibold">Desktop</p>
+<p className="text-[#2663EC] font-light text-sm">Product Rating</p>
+
+{/* Desktop - Product Rating Version */}
+<FinnrickCard variant="desktop" rating="A" interactive className="max-w-[370px]">
+  <FinnrickCardHeader />
+  <FinnrickCardContent>
+    <FinnrickCardBadge />
+    <div className="flex-1 flex flex-col gap-2">
+      <FinnrickCardTitle>Polaris Peptides</FinnrickCardTitle>
+      <FinnrickCardSubtitle>Semaglutide</FinnrickCardSubtitle>
+      <FinnrickCardDetails>
+        <FinnrickCardSampleInfo count={6} />
+        <FinnrickCardTestDate date="19 Feb 2025" />
+      </FinnrickCardDetails>
+    </div>
+  </FinnrickCardContent>
+</FinnrickCard>
+
+<p className="text-[#2663EC] font-light text-sm mt-8">Long Vendor/Product Name</p>
+
+{/* Desktop - Long Vendor/Product Name Version */}
+<FinnrickCard variant="desktop" rating="A" interactive className="max-w-[370px]">
+  <FinnrickCardHeader />
+  <FinnrickCardContent>
+    <FinnrickCardBadge />
+    <div className="flex-1 flex flex-col gap-2">
+      <FinnrickCardTitle>Shanghai Innovy Chemical New Materials</FinnrickCardTitle>
+      <FinnrickCardSubtitle>Tesamorelin, CJC-1295, Ipamorelin</FinnrickCardSubtitle>
+      <FinnrickCardDetails>
+        <FinnrickCardSampleInfo count={6} />
+        <FinnrickCardTestDate date="19 Feb 2025" />
+      </FinnrickCardDetails>
+    </div>
+  </FinnrickCardContent>
+</FinnrickCard>
+
+<p className="text-[#2663EC] font-semibold mt-12">Mobile</p>
+
+{/* Mobile - Product Rating Version */}
+<FinnrickCard variant="mobile" rating="A" interactive className="max-w-[370px]" horizontal>
+  <FinnrickCardHeader />
+  <FinnrickCardContent>
+    <FinnrickCardBadge />
+    <div className="flex-1 flex flex-col gap-2">
+      <FinnrickCardTitle>Polaris Peptides</FinnrickCardTitle>
+      <FinnrickCardSubtitle>Semaglutide</FinnrickCardSubtitle>
+      <FinnrickCardDetails>
+        <FinnrickCardSampleInfo count={6} />
+        <FinnrickCardTestDate date="19 Feb 2025" />
+      </FinnrickCardDetails>
+    </div>
+  </FinnrickCardContent>
+</FinnrickCard>
+
+<p className="text-[#2663EC] font-light text-sm mt-8">Long Vendor/Product Name</p>
+
+{/* Mobile - Long Vendor/Product Name Version */}
+<FinnrickCard variant="mobile" rating="A" interactive horizontal className="max-w-[370px]">
+  <FinnrickCardHeader />
+  <FinnrickCardContent>
+    <FinnrickCardBadge />
+    <div className="flex-1 flex flex-col gap-2">
+      <FinnrickCardTitle>Shanghai Innovy Chemical New Materials</FinnrickCardTitle>
+      <FinnrickCardSubtitle>Tesamorelin, CJC-1295, Ipamorelin</FinnrickCardSubtitle>
+      <FinnrickCardDetails>
+        <FinnrickCardSampleInfo count={6} />
+        <FinnrickCardTestDate date="19 Feb 2025" />
+      </FinnrickCardDetails>
+    </div>
+  </FinnrickCardContent>
+</FinnrickCard>
+
+<p className="text-[#2663EC] font-light text-sm mt-8">Long Vendor/Product Name</p>
+<FinnrickCard variant="mobile" rating="A" interactive className="max-w-[193px]">
+  <FinnrickCardHeader />
+  <FinnrickCardContent>
+    <FinnrickCardBadge />
+    <div className="flex-1 flex flex-col gap-2">
+      <FinnrickCardTitle>Shanghai Innovy Chemical New Materials</FinnrickCardTitle>
+      <FinnrickCardSubtitle>Tesamorelin, CJC-1295, Ipamorelin</FinnrickCardSubtitle>
+      <FinnrickCardDetails>
+        <FinnrickCardSampleInfo count={6} />
+        <FinnrickCardTestDate date="19 Feb 2025" />
+      </FinnrickCardDetails>
+    </div>
+  </FinnrickCardContent>
+</FinnrickCard>
+
 
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold text-gray-900">Optimized Third-Party Widgets</h2>

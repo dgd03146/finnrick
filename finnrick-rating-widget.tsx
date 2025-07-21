@@ -79,7 +79,7 @@ export default function FinnrickRatingWidget({
   rating = "A",
   ratingLabel,
   vendor = "Polaris Peptides",
-  compound = "Semaglutide", 
+  compound = "Semaglutide",
   samplesTested = 5,
   lastTestedDate = "18 Feb 2025",
   logoUrl,
@@ -127,7 +127,7 @@ export default function FinnrickRatingWidget({
             <div className="mt-2 px-2 py-1 bg-gray-900 rounded-full shadow-sm">
               <span className={`${styles.labelText} font-bold text-white uppercase tracking-wider`}>
                 {displayLabel}
-              </span>
+            </span>
             </div>
           </div>
 
