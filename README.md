@@ -162,10 +162,3 @@ function add_finnrick_rating_widget() {
 - **Browser Support**: Clarification on compatibility needs
 
 ---
-
-## 🔗 Demo
-
-Visit `/widget-showcase` to see all widget variants and integration examples.
-
-**Time Invested**: ~2 hours as requested  
-**Focus Areas**: UX polish, code quality, distribution strategy, brand protection 
